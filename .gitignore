@@ -1,0 +1,5 @@
+/qrc_shaders.cpp
+/qrc_textures.cpp
+/Makefile
+/moc_mainwidget.cpp
+/moc_predefs.hpp
