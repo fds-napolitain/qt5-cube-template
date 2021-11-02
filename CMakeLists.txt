@@ -15,13 +15,12 @@ endif()
 
 set(INSTALL_EXAMPLEDIR "${INSTALL_EXAMPLESDIR}/opengl/cube")
 
-find_package(Qt6 COMPONENTS Core)
-find_package(Qt6 COMPONENTS Gui)
-find_package(Qt6 COMPONENTS Widgets)
-find_package(Qt6 COMPONENTS OpenGL)
-find_package(Qt6 COMPONENTS OpenGLWidgets)
+find_package(Qt5 COMPONENTS Core)
+find_package(Qt5 COMPONENTS Gui)
+find_package(Qt5 COMPONENTS Widgets)
+find_package(Qt5 COMPONENTS OpenGL)
 
-qt_add_executable(cube
+add_executable(cube
     geometryengine.cpp geometryengine.hpp
     main.cpp
         view/mainwidget.cpp view/mainwidget.hpp
@@ -35,7 +34,6 @@ target_link_libraries(cube PUBLIC
     Qt::Core
     Qt::Gui
     Qt::OpenGL
-    Qt::OpenGLWidgets
     Qt::Widgets
 )
 
